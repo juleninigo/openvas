@@ -42,4 +42,21 @@ Ahora para actualizar las feeds en vuestras maquinas podeis usar el siguiente co
 ```
 make workspace
 ```
+---
+Quedando de la siguiente manera
+
+![Panel](https://github.com/juleninigo/openvas/raw/master/images/workspace.png)
+
+---
+
+Una vez dentro del contenedor vamos a actualizar las feeds, para ello ejecutaremos un script que se encuentra en la carpeta scripts del contenedor
+
+```
+bash scripts/sync.sh
+```
+---
+Ahora a esperar a que termine, después actualizando la web aparecerá como me sale a mi en la imágen del principio.
+---
+
+
 
