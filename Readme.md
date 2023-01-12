@@ -58,5 +58,13 @@ bash scripts/sync.sh
 Ahora a esperar a que termine, después actualizando la web aparecerá como me sale a mi en la imágen del principio.
 ---
 
+Una vez termine tenemos que investigar las direcciones ip fijas de las maquinas para conocer cuales seran nuestros targets local
 
+Para ello usaremos el comando 
 
+````
+docker network inspect compose_default
+````
+
+Dentro de la salida del comando podremos identificar los host y sus direcciones IP
+![Panel](https://github.com/juleninigo/openvas/raw/master/images/ips.png)
