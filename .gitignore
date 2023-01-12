@@ -8,3 +8,5 @@ testing/bind
 testing/archive
 *.swp
 gvm-tools
+
+compose/adocker-compose.yml
