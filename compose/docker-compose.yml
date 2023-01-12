@@ -15,9 +15,19 @@ services:
       - "RESTORE=false"  # This probably not be used from compose... see docs.
       - "DEBUG=false"  # This will cause the container to stop and not actually start gvmd
       - "HTTPS=false"  # wether to use HTTPS or not
+      - "GMP=9390"    # to enable see docs
     volumes:
       - "openvas:/data"
     container_name: openvas
-    image: immauss/openvas:latest
+    image: immauss/openvas
+  scannable:
+    image: immauss/scannable
+    container_name: scannable
+  metasploitable:
+    container_name: metasploitable2
+    image: cyberacademylabs/metasploitable2:latest
+    command: ["tail", "-f", "/dev/null"]
+    ports:
+      - "8080:8080"
 volumes:
   openvas:

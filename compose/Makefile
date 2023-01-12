@@ -6,6 +6,7 @@ help: _header
 	@echo ---------------------------------
 	@echo start
 	@echo workspace
+	@echo workspace-metasploitable2
 	@echo stop / stop-all
 	@echo build
 	@echo stats / logs
@@ -34,6 +35,8 @@ stop:
 workspace:
 	@docker exec -it openvas /bin/bash
 
+workspace-metasploitable2:
+	@docker exec -it metasploitable2 /bin/bash
 stop-all:
 	@docker stop $(shell docker ps -aq)
 
