@@ -20,7 +20,7 @@ _urls: _header
 	@echo [Openvas] http://localhost:9392
 	@echo ----------------------------------
 
-_start:
+start:
 	@docker compose up -d
 
 start: _start _urls
