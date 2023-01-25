@@ -13,10 +13,6 @@ help:
 	@echo clean
 	@echo ---------------------------------
 
-_header:
-	@echo -------
-	@echo Openvas (Modified by Julen Inigo)
-	@echo -------
 
 _urls: _header
 	${info }
@@ -27,7 +23,7 @@ _urls: _header
 _start:
 	@docker compose up -d
 
-start: _header _start _urls
+start: _start _urls
 
 stop:
 	@docker compose stop
