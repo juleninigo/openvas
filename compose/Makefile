@@ -1,6 +1,6 @@
 #!make
 
-help: _header
+help:
 	${info }
 	@echo Opciones:
 	@echo ---------------------------------
